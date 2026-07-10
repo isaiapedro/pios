@@ -1,0 +1,54 @@
+id: planner
+
+type: service
+
+name: PIOS Planner
+
+version: 1.0.0
+
+status: active
+
+owner: Pedro
+
+description: >
+  Intelligent planning service responsible
+  for transforming user context into
+  executable schedules.
+
+tags:
+  - planner
+  - scheduling
+  - calendar
+
+depends_on:
+  - registry
+  - personal
+  - knowledge/planning_science
+
+consumes:
+  - calendar
+  - personal_context
+  - scientific_recommendations
+
+exports:
+  - schedules
+  - planning_api
+  - planner_events
+
+interfaces:
+  api: true
+  cli: false
+  webhook: true
+
+permissions:
+
+  reads:
+    - personal/*
+    - knowledge/*
+    - registry
+
+  writes:
+    - calendar
+    - planner
+
+status: active

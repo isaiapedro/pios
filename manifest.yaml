@@ -1,0 +1,17 @@
+id: pios_workspace
+type: workspace
+name: PIOS Core Workspace
+version: 1.0.0
+status: active
+owner: Pedro
+description: >
+  The root workspace of the Personal Intelligence Operating System (PIOS),
+  orchestrating personal domains, services, knowledge bases, and side projects.
+subfolders:
+  - personal
+  - services
+  - knowledge
+  - registry
+  - design
+  - side_projects
+  - templates

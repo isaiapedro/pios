@@ -1,0 +1,32 @@
+id: personal
+
+type: personal_domain
+
+version: 1.0.0
+
+display_name: Personal Knowledge Domain
+
+description: Canonical repository of subjective user state.
+
+owner: pedro
+
+status: active
+
+dependencies:
+  - knowledge/planning_science
+  - knowledge/psychology
+  - registry
+
+exports:
+  - personal_context
+  - schedules
+  - habits
+  - goals
+  - insights
+
+permissions:
+  read:
+    - knowledge/*
+    - registry
+  write:
+    - personal/*

@@ -1,0 +1,22 @@
+id: registry
+type: core_infrastructure
+name: Global PIOS Registry
+version: 1.0.0
+status: active
+owner: Pedro
+description: >
+  Centralized system registry handling discovery, semantic search, cross-domain 
+  dependency resolution, and ontology exposure across the PIOS ecosystem.
+exports:
+  - service_discovery
+  - dependency_graph
+  - semantic_search_provider
+consumes:
+  - knowledge/ontology
+  - domain_manifests
+permissions:
+  reads:
+    - "*/manifest.yaml"
+    - "knowledge/*/ONTOLOGY.md"
+  writes:
+    - registry/state

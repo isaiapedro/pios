@@ -1,0 +1,15 @@
+id: design
+type: core_domain
+name: PIOS Design System
+version: 1.0.0
+status: incubation
+owner: Pedro
+description: >
+  Houses interface contracts, visual language, UI components, data visualization layouts, 
+  and experience design tokens utilized across PIOS frontends and documents.
+exports:
+  - design_tokens
+  - interface_contracts
+  - component_guidelines
+consumes:
+  - registry

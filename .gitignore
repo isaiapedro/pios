@@ -1,0 +1,42 @@
+# 1. Ignore everything by default
+*
+
+# 2. Allow Git to traverse into directories to look for configs
+!*/
+
+# 3. CRITICAL: Absolutely block external, dependency, and cache folders
+# Git will completely skip scanning anything inside these folders
+**/node_modules/
+**/raw/docs/
+**/.ci/
+**/.circleci/
+**/.github/
+**/.vscode/
+**/.devcontainer/
+**/android/
+**/ios/
+
+# 4. Whitelist only your specific PIOS workspace files by exact name
+!**/manifest.yaml
+!**/CLAUDE.md
+!**/SYSTEM.md
+!**/BEHAVIOR.md
+!**/SKILLS.md
+!**/STATE.md
+!**/TASKS.md
+!**/REVIEW.md
+!**/API.md
+!**/README.md
+!**/PRIVACY.md
+!**/INDEX.md
+!**/KNOWLEDGE.md
+!**/ONTOLOGY.md
+!**/DECISIONS.md
+!**/IDEAS.md
+!**/ROADMAP.md
+!**/ARCHITECTURE.md
+!**/CHANGELOG.md
+!**/DEPENDENCIES.md
+
+# 6. Ensure this .gitignore itself is tracked
+!.gitignore

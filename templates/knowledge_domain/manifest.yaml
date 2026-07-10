@@ -1,0 +1,56 @@
+id: planning_science
+
+type: knowledge_domain
+
+name: Planning Science
+
+version: 1.0.0
+
+owner: Pedro
+
+description: >
+  Scientific knowledge regarding planning,
+  cognitive science and productivity.
+
+tags:
+  - planning
+  - psychology
+  - productivity
+
+depends_on:
+  - psychology
+  - health
+
+exports:
+  - planning_principles
+  - scheduling_models
+  - cognitive_frameworks
+
+consumers:
+  - planner
+  - work_manager
+  - blog_manager
+
+permissions:
+
+  reads:
+    - registry
+    - psychology
+    - health
+
+  writes:
+    - wiki
+    - ontology
+
+structure:
+
+  required:
+    - raw
+    - wiki
+
+  optional:
+    - outputs
+    - tools
+    - data
+
+status: active

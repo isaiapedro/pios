@@ -1,0 +1,32 @@
+id: grocery_manager
+type: service
+name: PIOS Grocery Manager
+version: 1.0.0
+status: active
+owner: Pedro
+description: >
+  Automated grocery list capture, categorization, and tracking service 
+  integrated with PostgreSQL storage and deployable via AWS Lambda.
+tags:
+  - grocery
+  - inventory
+  - lambda
+  - database
+depends_on:
+  - registry
+consumes:
+  - user_input
+  - database_credentials
+exports:
+  - grocery_lists
+  - categorized_items
+interfaces:
+  api: true
+  cli: true
+  webhook: false
+permissions:
+  reads:
+    - registry
+    - config/data/*
+  writes:
+    - config/data/*

@@ -1,0 +1,14 @@
+# Local virtual environments
+cenv/
+
+# Local AI Agent state
+.claude/
+
+# Secret tokens and keys
+config/.env
+
+# System specific files
+__pycache__/
+*.pyc
+.DS_Store
+config/data/*

@@ -1,0 +1,35 @@
+id: ecommerce
+
+type: side_project
+
+name: Ecommerce Platform
+
+version: 0.1.0
+
+status: incubation
+
+owner: Pedro
+
+description: >
+  Experimental project used to explore
+  ecommerce architecture and business ideas.
+
+tags:
+  - ecommerce
+  - startup
+  - experiment
+
+depends_on:
+  - services/planner
+  - knowledge/business
+  - knowledge/technology
+
+exports: []
+
+consumes:
+  - registry
+  - knowledge
+
+stage: prototype
+
+priority: medium
