@@ -1,0 +1,38 @@
+id: planner
+type: service
+name: PIOS Intelligent Planner
+version: 3.1.0
+status: active
+owner: Pedro
+description: >
+  Intelligent scheduling and time allocation orchestration engine combining a 
+  React Native/Expo mobile application with a FastAPI backend pipeline.
+tags:
+  - planner
+  - scheduling
+  - mcp
+  - fastapi
+  - expo
+depends_on:
+  - registry
+  - knowledge/planning_science
+consumes:
+  - personal_context
+  - scientific_wiki
+  - google_calendar_api
+exports:
+  - schedules
+  - behavioral_metrics
+  - intent_verifications
+interfaces:
+  api: true
+  cli: true
+  webhook: true
+permissions:
+  reads:
+    - personal/*
+    - knowledge/planning_science/*
+    - registry
+  writes:
+    - databases/pg_init.sql
+    - master_wiki/insights/*
