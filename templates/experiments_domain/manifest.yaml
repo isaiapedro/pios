@@ -1,0 +1,8 @@
+name: "experiments_domain_template"
+type: "meta_template"
+version: "1.0.0"
+description: "Canonical blueprint for research spikes, temporary code tests, and configuration scratchpads"
+owner: "user"
+status: "template"
+layers:
+  - "Layer 4: Knowledge System"

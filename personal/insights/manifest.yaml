@@ -1,0 +1,8 @@
+name: "insights"
+type: "intelligence_engine"
+version: "1.0.0"
+description: "Strategic vector store managing historical behavioral reviews, trend analytics, and model updates"
+owner: "user"
+status: "active"
+layers:
+  - "Layer 5: Intelligence"

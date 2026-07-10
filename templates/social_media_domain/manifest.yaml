@@ -1,0 +1,9 @@
+name: "social_media_domain_template"
+type: "meta_template"
+version: "1.0.0"
+description: "Canonical blueprint for content creation, rendering pipelines, and asset deployment"
+owner: "user"
+status: "template"
+layers:
+  - "Layer 1: Mobile Interface"
+  - "Layer 4: Knowledge System"

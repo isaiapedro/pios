@@ -1,0 +1,8 @@
+name: "memos"
+type: "pipeline_engine"
+version: "1.0.0"
+description: "Landing container for structured text transcripts with applied dashboard annotations and metrics"
+owner: "user"
+status: "active"
+layers:
+  - "Layer 4: Knowledge System"

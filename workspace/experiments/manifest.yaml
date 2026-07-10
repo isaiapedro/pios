@@ -1,0 +1,5 @@
+name: "experiments_workspace"
+type: "transient_playground"
+version: "1.0.0"
+description: "Volatile sandbox for dirty code spikes, prompt tests, and algorithm validations"
+status: "active"

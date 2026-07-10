@@ -1,0 +1,16 @@
+name: "video_service"
+type: "processing_service"
+version: "1.0.0"
+description: "Automated media transcoding, clipping, and local asset rendering pipeline"
+owner: "user"
+status: "active"
+layers:
+  - "Layer 4: Knowledge System"name: "trends_service"
+type: "analytical_service"
+version: "1.0.0"
+description: "Data-mining engine parsing cross-platform social media and personal metrics"
+owner: "user"
+status: "active"
+layers:
+  - "Layer 4: Knowledge System"
+  - "Layer 5: Intelligence"

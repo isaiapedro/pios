@@ -1,0 +1,12 @@
+name: "career_strategy"
+type: "strategic_personal_domain"
+version: "1.0.0"
+description: "Long-term self-directed professional trajectory, market tracking, and support metrics"
+owner: "user"
+status: "active"
+layers:
+  - "Layer 5: Intelligence"
+  - "Layer 4: Knowledge System"
+storage:
+  type: "local_markdown"
+  encryption_required: true

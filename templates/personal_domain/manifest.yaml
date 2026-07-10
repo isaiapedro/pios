@@ -1,0 +1,9 @@
+name: "personal_domain_template"
+type: "meta_template"
+version: "1.0.0"
+description: "Canonical blueprint for self-directed personal strategies, logs, and tracking parameters"
+owner: "user"
+status: "template"
+layers:
+  - "Layer 4: Knowledge System"
+  - "Layer 5: Intelligence"

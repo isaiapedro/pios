@@ -15,3 +15,9 @@ Govern the entire PIOS workspace, ensuring structural integrity, absolute privac
 - Review the root `README.md` and active project status before modifying system-wide structures.
 - Validate that all internal dependencies match definitions in the global registry configuration.
 - Enforce the completion of local architectural decision logs (`DECISIONS.md`) whenever a shared standard changes.
+
+---
+
+## Workspace Maintenance Protocols
+- When initializing an active project directory under `/workspace`, you must execute the corresponding setup pattern found inside the `/templates` domain.
+- Never hardcode environmental constraints directly inside project sub-nodes; always extend local parameters from the root `manifest.yaml` configuration matrix.

@@ -1,0 +1,8 @@
+name: "transcripts"
+type: "pipeline_engine"
+version: "1.0.0"
+description: "Immutable repository for raw local Speech-to-Text text blocks"
+owner: "user"
+status: "active"
+layers:
+  - "Layer 4: Knowledge System"

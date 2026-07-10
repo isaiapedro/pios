@@ -1,0 +1,5 @@
+name: "side_projects_workspace"
+type: "independent_development_workspace"
+version: "1.0.0"
+description: "Persistent non-commercial software architectures and utility builds"
+status: "active"

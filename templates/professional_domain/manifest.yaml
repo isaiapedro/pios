@@ -1,0 +1,9 @@
+name: "professional_domain_template"
+type: "meta_template"
+version: "1.0.0"
+description: "Canonical blueprint for corporate, work-bound operational workspaces"
+owner: "user"
+status: "template"
+layers:
+  - "Layer 1: Mobile Interface"
+  - "Layer 2: Deterministic Constraints & Extraction"

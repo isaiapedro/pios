@@ -1,0 +1,12 @@
+name: "professional_workspace"
+type: "operational_workspace"
+version: "1.0.0"
+description: "Tactical environment for current employment execution, role definitions, and task mirrors"
+owner: "user"
+status: "active"
+layers:
+  - "Layer 1: Mobile Interface"
+  - "Layer 2: Deterministic Constraints & Extraction"
+storage:
+  type: "mixed_workspace"
+  git_tracking: true

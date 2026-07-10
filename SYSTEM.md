@@ -22,6 +22,12 @@ Orchestrate and maintain the integration of the Personal Intelligence Operating 
 
 ---
 
+## Workspace Resolution Subsystem
+1. The Layer 2 constraint crawler must recursively scan `/workspace/*/*/manifest.yaml` once every 24 hours.
+2. If any subdirectory lacks an active `manifest.yaml` and a matching `BEHAVIOR.md` layer, the parser must throw a validation warning and exclude the directory tree from context integration loops.
+
+---
+
 # Non-responsibilities
 - Domain-specific execution logic.
 - Direct management of calendar or external vendor APIs (delegated to services).
