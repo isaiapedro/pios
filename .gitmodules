@@ -1,0 +1,3 @@
+[submodule "workspace/academic"]
+	path = workspace/academic
+	url = https://github.com/isaiapedro/streaming-pipeline.git
