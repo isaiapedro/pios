@@ -1,0 +1,18 @@
+version: "1.0"
+domain: "technology"
+name: "Technology & Software Engineering Domain"
+description: "System architectures, API design protocols, software design patterns, and engineering infrastructure."
+
+paths:
+  raw: "knowledge/technology/raw"
+  synthesized: "knowledge/technology/synthesized"
+
+sources: []
+
+cross_domain_dependencies:
+  health:
+    - "HL7 FHIR R4 API Specifications"
+    - "OMOP CDM Database Schemas"
+  business:
+    - "IEC 62304 Software Development Lifecycle"
+    - "ISO 13485 Configuration Management"

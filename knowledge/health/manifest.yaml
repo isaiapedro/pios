@@ -1,0 +1,25 @@
+version: "1.0"
+domain: "health"
+name: "Health & Life Sciences Domain"
+description: "Medical informatics, health data standards, observational data models, and clinical systems."
+
+paths:
+  raw: "knowledge/health/raw"
+  synthesized: "knowledge/health/synthesized"
+
+sources:
+  - id: "hl7-fhir-r4"
+    name: "HL7 FHIR R4"
+    type: "interoperability_standard"
+    path: "knowledge/health/raw/HL7 FHIR R4"
+  - id: "omop-cdm-v54"
+    name: "OMOP CDM v5.4"
+    type: "observational_data_model"
+    path: "knowledge/health/raw/OMOP CDM v5.4"
+
+cross_domain_dependencies:
+  business:
+    - "ISO 13485, IEC 62304, and EU MDR compliance"
+  technology:
+    - "REST API Architecture"
+    - "Relational Data Modeling"

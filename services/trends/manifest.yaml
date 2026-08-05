@@ -1,16 +1,22 @@
-name: "video_service"
-type: "processing_service"
-version: "1.0.0"
-description: "Automated media transcoding, clipping, and local asset rendering pipeline"
-owner: "user"
-status: "active"
-layers:
-  - "Layer 4: Knowledge System"name: "trends_service"
+name: "trends_service"
 type: "analytical_service"
-version: "1.0.0"
+version: "1.1.0"
 description: "Data-mining engine parsing cross-platform social media and personal metrics"
 owner: "user"
 status: "active"
 layers:
   - "Layer 4: Knowledge System"
   - "Layer 5: Intelligence"
+exports:
+  - "keyword_demand_velocity"
+  - "channel_momentum_analysis"
+dependencies:
+  external:
+    - "pytrends (Google Trends, unauthenticated)"
+    - "YouTube Data API v3 (requires YOUTUBE_API_KEY)"
+  local:
+    - "Ollama (nomic-embed-text) — shared with services/planner"
+    - "Ollama (llama3.2) — shared with services/planner, used as LLM-judge"
+env:
+  - "YOUTUBE_API_KEY"
+  - "OLLAMA_HOST"

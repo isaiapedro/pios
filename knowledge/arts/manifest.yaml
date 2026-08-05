@@ -1,0 +1,17 @@
+version: "1.0"
+domain: "arts"
+name: "Arts, Design & Aesthetics Domain"
+description: "Visual design systems, aesthetic frameworks, creative writing, typography, and creative media production."
+
+paths:
+  raw: "knowledge/arts/raw"
+  synthesized: "knowledge/arts/synthesized"
+
+sources: []
+
+cross_domain_dependencies:
+  media:
+    - "Publication Layouts & Asset Specs"
+  technology:
+    - "UI/UX Components & CSS Systems"
+    - "Design Tokens & Frontend Styling"

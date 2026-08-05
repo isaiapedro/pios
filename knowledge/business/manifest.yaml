@@ -1,0 +1,22 @@
+version: "1.0"
+domain: "business"
+name: "Business, Strategy & Compliance Domain"
+description: "Corporate governance, regulatory frameworks, quality management systems (QMS), and market operations."
+
+paths:
+  raw: "knowledge/business/raw"
+  synthesized: "knowledge/business/synthesized"
+
+sources:
+  - id: "iso13485-iec62304-eumdr"
+    name: "ISO 13485, IEC 62304, and EU MDR compliance"
+    type: "regulatory_framework"
+    path: "knowledge/business/raw/ISO 13485, IEC 62304, and EU MDR compliance"
+
+cross_domain_dependencies:
+  health:
+    - "Clinical Workflow Standards"
+    - "Medical Device Data Models"
+  technology:
+    - "Software Architecture Documentation"
+    - "CI/CD Verification & Validation"

@@ -1,0 +1,24 @@
+version: "1.0"
+domain: "media"
+name: "Media, Content Strategy & Publishing Domain"
+description: "Editorial workflows, blog management, content production, transcripts, and publishing distribution strategy."
+
+paths:
+  raw: "knowledge/media/raw"
+  synthesized: "knowledge/media/synthesized"
+
+sources:
+  - id: "blog-manager"
+    name: "Blog Manager"
+    type: "editorial_workflow"
+    path: "knowledge/media/blog_manager"
+
+cross_domain_dependencies:
+  business:
+    - "Brand Strategy & Positioning"
+    - "Customer Acquisition Models"
+  arts:
+    - "Visual Design Systems"
+    - "Aesthetic Frameworks"
+  technology:
+    - "CMS Architecture & Static Site Generators"
