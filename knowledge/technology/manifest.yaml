@@ -7,7 +7,22 @@ paths:
   raw: "knowledge/technology/raw"
   synthesized: "knowledge/technology/synthesized"
 
-sources: []
+sources:
+  - id: "streaming-papers"
+    name: "Streaming & Distributed Systems Papers"
+    type: "research_papers"
+    path: "knowledge/technology/raw"
+    note: "Kafka, Spark, Flink, Cassandra, Delta Lake, data architecture papers"
+  - id: "ml-papers"
+    name: "Machine Learning & AI Papers"
+    type: "research_papers"
+    path: "knowledge/technology/raw"
+    note: "BERT, XGBoost, LSTM, attention, federated learning, SHAP, model cards"
+  - id: "tech-docs"
+    name: "Technology Documentation"
+    type: "reference_docs"
+    path: "knowledge/technology/raw/docs"
+    note: "Kafka, InfluxDB, NATS, OpenTelemetry, Protobuf, PySpark docsets"
 
 cross_domain_dependencies:
   health:

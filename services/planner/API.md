@@ -1,5 +1,20 @@
 # Public Interfaces
 
+## Planning Transaction (`/planning`)
+
+- **POST /planning/week**: Creates a draft weekly plan from natural-language intention, wiki evidence, calendar availability, deterministic scheduling, and validation.
+- **GET /planning/{id}**: Returns a stored planning run.
+- **POST /planning/{id}/validate**: Re-runs deterministic validation on a draft.
+- **POST /planning/{id}/accept**: Writes accepted exploration blocks to Google Calendar.
+- **POST /planning/{id}/reject**: Marks a draft as rejected without calendar mutation.
+
+## Weekly Routine (`/routine`)
+
+Knowledge-authored schedule — no LLM. Source: `knowledge/health/synthesized/routine_calendar.json`.
+
+- **GET /routine/week**: Returns the structured week (preview).
+- **POST /routine/apply**: Creates all blocks in Google Calendar and records them in `events`.
+
 ## REST API Services (`tools/api/routers/`)
 
 ### 1. Memo Pipeline Interface (`/memos`)

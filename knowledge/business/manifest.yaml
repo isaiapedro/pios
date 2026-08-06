@@ -12,6 +12,11 @@ sources:
     name: "ISO 13485, IEC 62304, and EU MDR compliance"
     type: "regulatory_framework"
     path: "knowledge/business/raw/ISO 13485, IEC 62304, and EU MDR compliance"
+  - id: "health-data-privacy-regs"
+    name: "Health Data Privacy Regulations"
+    type: "regulatory_documents"
+    path: "knowledge/business/raw"
+    note: "GDPR Art. 9/17, HIPAA, LGPD, EU AI Act, IEC 60601-1-8, IMDRF SAMD, EU MDR 2017/745"
 
 cross_domain_dependencies:
   health:

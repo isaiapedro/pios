@@ -21,31 +21,30 @@ subdomains:
     description: "Visual design, creative writing, aesthetics, sound, and interactive arts."
 
 migration_plan:
-  status: "pending"
-  rules:
-    - action: "move_and_reindex"
-      source: "knowledge/wiki_tcc/raw/HL7 FHIR R4"
-      target: "knowledge/health/raw/HL7 FHIR R4"
-    - action: "move_and_reindex"
-      source: "knowledge/wiki_tcc/raw/OMOP CDM v5.4"
-      target: "knowledge/health/raw/OMOP CDM v5.4"
-    - action: "move_and_reindex"
-      source: "knowledge/wiki_tcc/raw/ISO 13485, IEC 62304, and EU MDR compliance"
-      target: "knowledge/business/raw/ISO 13485, IEC 62304, and EU MDR compliance"
-    - action: "move_and_reindex"
-      source: "knowledge/health/raw/HL7 FHIR R4"
-      target: "knowledge/health/raw/HL7 FHIR R4"
-    - action: "move_and_reindex"
-      source: "knowledge/health/raw/OMOP CDM v5.4"
-      target: "knowledge/health/raw/OMOP CDM v5.4"
-    - action: "move_and_reindex"
-      source: "knowledge/business/raw/ISO 13485, IEC 62304, and EU MDR compliance"
-      target: "knowledge/business/raw/ISO 13485, IEC 62304, and EU MDR compliance"
-    - action: "move_and_reindex"
-      source: "knowledge/blog_manager"
-      target: "knowledge/media/blog_manager"
-    - action: "cleanup"
-      targets:
-        - "knowledge/wiki_tcc"
-        - "knowledge/blog_manager"
-      condition: "empty_or_migrated"
+  status: "completed"
+  completed: "2026-08-05"
+  summary: |
+    Full wiki_tcc migration complete. All raw files distributed to health/technology/business domains.
+    All wiki content (concepts, papers, datasets, technologies, organizations) distributed to domain wikis.
+    TCC research synthesis docs moved to health/synthesized/tcc.
+    Tech documentation moved to technology/raw/docs.
+    FHIR schemas moved to health/raw/FHIR-schemas.
+    LOINC 2.82 data moved to health/raw/LOINC User Guide.
+    239 wiki markdown files received YAML frontmatter.
+    wiki_tcc now contains only CLAUDE.md and .claude agent config (kept as legacy reference).
+  completed_rules:
+    - source: "knowledge/wiki_tcc/raw/HL7 FHIR R4" → "knowledge/health/raw/HL7 FHIR R4"
+    - source: "knowledge/wiki_tcc/raw/OMOP CDM v5.4" → "knowledge/health/raw/OMOP CDM v5.4"
+    - source: "knowledge/wiki_tcc/raw/ISO 13485..." → "knowledge/business/raw/ISO 13485..."
+    - source: "knowledge/blog_manager" → "knowledge/media/blog_manager"
+    - source: "knowledge/planning/raw" → "knowledge/health/raw"
+    - source: "knowledge/wiki_tcc/raw (253 files)" → health(~180)/technology(66)/business(9)
+    - source: "knowledge/wiki_tcc/wiki/papers (233)" → health(~130)/technology(~60)/business(~17)
+    - source: "knowledge/wiki_tcc/wiki/concepts (24)" → health(10)/technology(11)/business(3)
+    - source: "knowledge/wiki_tcc/wiki/technologies (12)" → technology/wiki/tools
+    - source: "knowledge/wiki_tcc/wiki/datasets (3)" → health/wiki/datasets
+    - source: "knowledge/wiki_tcc/wiki/organizations (3)" → health(2)/technology(1)
+    - source: "knowledge/wiki_tcc/documents" → technology/raw/docs
+    - source: "knowledge/wiki_tcc/raw/definitions.json" → health/raw/FHIR-schemas
+    - source: "knowledge/wiki_tcc/raw/docs" → technology/raw/docs
+    - source: "knowledge/wiki_tcc/wiki/*.md (13)" → health/synthesized/tcc
