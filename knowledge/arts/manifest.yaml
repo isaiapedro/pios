@@ -6,8 +6,13 @@ description: "Visual design systems, aesthetic frameworks, creative writing, typ
 paths:
   raw: "knowledge/arts/raw"
   synthesized: "knowledge/arts/synthesized"
+  wiki: "knowledge/arts/wiki"
 
-sources: []
+sources:
+  - id: "equipment-docs"
+    name: "Video & Audio Production Equipment Documentation"
+    type: "production_reference"
+    path: "knowledge/arts/raw/equipment"
 
 cross_domain_dependencies:
   media:

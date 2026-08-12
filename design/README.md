@@ -1,9 +1,31 @@
 # PIOS Design System & UI Assets
 
-## 1. Directory Purpose
-This directory houses the visual definitions, identity parameters, and core components used to render the PIOS Layer 1 Mobile Interface.
+## Purpose
 
-## 2. Directory Layout
-- `assets/cards/`: Micro-component layouts for intentional theme blocks (e.g., focus meters, recovery trackers).
-- `identity/`: Typographical guidelines, canonical color spaces mapped to life themes, and brand identity assets.
-- `ui/`: Design tokens, layout wires, and widget definitions.
+Visual definitions, identity parameters, and reusable UI/mobile patterns for PIOS frontends. First extracted product: **Chess Wrapped**.
+
+## Directory layout
+
+| Path | Contents |
+|------|----------|
+| `assets/` | Logos, banners, card previews, product icon packs |
+| `identity/` | Brand philosophy, color/type contracts per product |
+| `references/` | Source maps, licenses, captured manuals |
+| `ui/` | Component kits + token snapshots |
+| `mobile/` | Mobile shell patterns + Figma Make prototypes |
+
+## How to start a new app from this collection
+
+1. Read `identity/<product>/` for palette + type + motion.
+2. Copy `ui/<product>/theme.ts` (and primitives notes) into the new codebase.
+3. Mirror shell patterns from `mobile/<product>/` if the surface is native.
+4. Grab raster/SVG from `assets/<product>/` as needed.
+5. Check `references/<product>/INDEX.md` before changing licenses or inventing parallel tokens.
+
+## Chess Wrapped entry points
+
+- Identity: `identity/chess-wrapped/README.md`
+- UI kit: `ui/chess-wrapped/README.md`
+- Mobile shell: `mobile/chess-wrapped/README.md`
+- Assets: `assets/chess-wrapped/`
+- Sources: `references/chess-wrapped/INDEX.md`

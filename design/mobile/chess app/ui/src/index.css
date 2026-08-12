@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+  --font-sans: 'Helvetica', 'Inter', system-ui, sans-serif;
+
+  --color-bg: #0a0a0f;
+  --color-panel: #111117;
+  --color-raised: #17171f;
+  --color-lifted: #1e1e28;
+
+  --color-win: #22c55e;
+  --color-loss: #D32531;
+  --color-draw: #94a3b8;
+  --color-amber: #fbbf24;
+  --color-indigo: #818cf8;
+
+  --color-ink: #ffffff;
+  --color-ink2: #cccccc;
+  --color-ink3: #888888;
+
+  --color-rim: rgba(255,255,255,0.2);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #0a0a0f;
+  color: #ffffff;
+  font-family: 'Helvetica', 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior: none;
+}
+
+/* Typography Classes */
+.serif-heading {
+  font-family: 'Playfair Display', serif;
+  line-height: 1.2;
+}
+
+.article-byline {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 0.95rem;
+  color: #cccccc;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+.article-date {
+  font-size: 0.95rem;
+  word-spacing: -0.4ch;
+  font-weight: 300;
+  color: #888888;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+/* Crimson Geometric Rectangular Tag / Button */
+.filter-rect {
+  padding: 8px 16px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  background-color: #D32531;
+  border: 1px solid #000000;
+  box-shadow: 0px 0px 0px 2px #ffffff, 0px 4px 0px 2px #6D7876;
+  border-radius: 0px;
+}
+
+.filter-rect:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+
+.filter-rect.active {
+  background-color: #a0000f;
+  box-shadow: 0px 0px 0px 2px #ffffff, 0px 2px 0px 2px #4d5453;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1) opacity(0.5);
+  cursor: pointer;
+}
+
+input[type="date"] {
+  color-scheme: dark;
+}

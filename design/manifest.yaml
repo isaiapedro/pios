@@ -1,15 +1,28 @@
 id: design
 type: core_domain
 name: PIOS Design System
-version: 1.0.0
-status: incubation
+version: 1.1.0
+status: active
 owner: Pedro
 description: >
-  Houses interface contracts, visual language, UI components, data visualization layouts, 
-  and experience design tokens utilized across PIOS frontends and documents.
+  Houses interface contracts, visual language, UI components, data visualization layouts,
+  experience design tokens, and product-extracted pattern dossiers used across PIOS frontends.
 exports:
   - design_tokens
   - interface_contracts
   - component_guidelines
+  - product_pattern_dossiers
 consumes:
   - registry
+products:
+  - id: chess-wrapped
+    paths:
+      assets: assets/chess-wrapped
+      identity: identity/chess-wrapped
+      references: references/chess-wrapped
+      ui: ui/chess-wrapped
+      mobile: mobile/chess-wrapped
+    source: workspace/side_projects/chess/mobile
+    prototypes:
+      - mobile/chess app/ui
+      - mobile/chess app/Enhance App Visuals (2)

@@ -6,12 +6,17 @@ description: "Editorial workflows, blog management, content production, transcri
 paths:
   raw: "knowledge/media/raw"
   synthesized: "knowledge/media/synthesized"
+  wiki: "knowledge/media/wiki"
 
 sources:
-  - id: "blog-manager"
-    name: "Blog Manager"
-    type: "editorial_workflow"
-    path: "knowledge/media/blog_manager"
+  - id: "raw-blog"
+    name: "Blog & Creator Economy Clippings"
+    type: "editorial_raw"
+    path: "knowledge/media/raw/blog"
+  - id: "raw-youtube"
+    name: "YouTube Strategy Clippings"
+    type: "editorial_raw"
+    path: "knowledge/media/raw/youtube"
 
 cross_domain_dependencies:
   business:

@@ -23,6 +23,16 @@ sources:
     type: "reference_docs"
     path: "knowledge/technology/raw/docs"
     note: "Kafka, InfluxDB, NATS, OpenTelemetry, Protobuf, PySpark docsets"
+  - id: "sports-analytics"
+    name: "Sports Analytics ML Papers"
+    type: "research_papers"
+    path: "knowledge/technology/raw"
+    note: "Football/soccer ML models: locomotor, xG, MLP worldcup prediction, polynomial classifier"
+  - id: "tech-trends"
+    name: "Tech Trends Research"
+    type: "research_notes"
+    path: "knowledge/technology/raw"
+    note: "tech_trends.md, trends_batch_a/b/c/d.md — scraped trend analyses"
 
 cross_domain_dependencies:
   health:
