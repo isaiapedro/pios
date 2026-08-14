@@ -1,0 +1,15 @@
+.env
+tokens.json
+cache/
+*.log
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+state/idempotency.json
+archive/executions/*
+!archive/executions/.gitkeep

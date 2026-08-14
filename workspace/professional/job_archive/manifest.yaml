@@ -1,0 +1,44 @@
+name: "job_archive"
+type: "professional_operational_service"
+version: "1.1.0"
+description: >
+  Local-first professional execution archive. Mirrors existing Jira cards,
+  updates owned tasks, and stores sanitized work summaries. Card creation
+  and Slack approval are handled by the company n8n workflow.
+owner: "Pedro"
+status: "active"
+security_level: "proprietary_sanitized"
+storage:
+  type: "local_mirror"
+  git_tracking: true
+  local_only: true
+depends_on:
+  - workspace/professional
+permitted_integrations:
+  - jira
+  - local_git
+capabilities:
+  - local_execution_archive
+  - sanitized_work_summary
+  - jira_card_mirror
+  - jira_card_update
+  - idempotent_sync
+security_boundary:
+  credentials: environment_only
+  company_repositories: local_scanner_only
+  llm_interface: sanitized_outputs_only
+  jira_creation: external_n8n_only
+exports:
+  - sanitized_execution_summaries
+  - jira_card_states
+  - active_work_themes
+  - blockers_and_milestones
+does_not_export:
+  - raw_source_code
+  - secrets
+  - unrestricted_jira_payloads
+  - company_documents
+interfaces:
+  cli: true
+  mcp: false
+  webhook: false

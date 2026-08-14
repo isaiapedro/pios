@@ -35,8 +35,13 @@
 !**/IDEAS.md
 !**/ROADMAP.md
 !**/ARCHITECTURE.md
+!**/ARCHITECTURE_SPEC.md
+!**/JOB_ARCHIVE_STRUCTURE.md
 !**/CHANGELOG.md
 !**/DEPENDENCIES.md
+!**/.env.example
+!**/.gitkeep
+!**/pyproject.toml
 
 # 5. Chess coach experiment source (keep books/chroma local-only)
 !workspace/experiments/chess-coach/
@@ -88,3 +93,18 @@ design/**/tsconfig*.json
 
 # 7. Ensure this .gitignore itself is tracked
 !.gitignore
+
+# 8. Job Archive & Jira Integration
+!workspace/professional/job_archive/
+!workspace/professional/job_archive/**
+workspace/professional/job_archive/.env
+workspace/professional/job_archive/tokens.json
+workspace/professional/job_archive/cache/
+workspace/professional/job_archive/**/*.log
+workspace/professional/job_archive/.venv/
+workspace/professional/job_archive/**/__pycache__/
+workspace/professional/job_archive/**/*.pyc
+workspace/professional/job_archive/**/.pytest_cache/
+workspace/professional/job_archive/**/*.egg-info/
+workspace/professional/job_archive/state/idempotency.json
+workspace/professional/job_archive/archive/executions/*.json

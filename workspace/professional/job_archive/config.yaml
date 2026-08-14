@@ -1,0 +1,22 @@
+jira:
+  project_key: EFICORE
+  sync_jql: "assignee = currentUser() AND project = EFICORE AND resolution = EMPTY ORDER BY updated DESC"
+  max_results: 50
+  base_url_env: JIRA_BASE_URL
+
+repositories:
+  - /home/pedrosouza/projetos/kraken
+  - /home/pedrosouza/projetos/kraken-data
+  - /home/pedrosouza/projetos/bordercollie
+  - /home/pedrosouza/projetos/goat
+  - /home/pedrosouza/projetos/pelican
+
+sanitization:
+  max_diff_bytes: 65536
+  max_files: 50
+  max_commits: 20
+  proprietary_patterns: []
+
+scan:
+  max_diff_stat_lines: 200
+  default_since: "7 days ago"
