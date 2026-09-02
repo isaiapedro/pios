@@ -1,0 +1,29 @@
+/* ============================================================
+   Caramelo — Webfonts
+   Inter (body/UI) + Roboto Mono (mono) from Google Fonts.
+   Gooper (brand display) — real licensed Latinotype face, shipped
+   from assets/fonts/ (SemiBold 600, Bold 700, Black 900).
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap');
+
+@font-face {
+  font-family: "Gooper";
+  src: url("../assets/fonts/Gooper-SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gooper";
+  src: url("../assets/fonts/Gooper-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gooper";
+  src: url("../assets/fonts/Gooper-Black.otf") format("opentype");
+  font-weight: 800 900;
+  font-style: normal;
+  font-display: swap;
+}

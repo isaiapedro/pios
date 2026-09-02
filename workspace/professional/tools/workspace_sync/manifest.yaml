@@ -1,0 +1,32 @@
+name: "workspace_sync"
+type: "knowledge_ingestion_service"
+version: "1.0.0"
+description: >
+  Automated knowledge ingestion from Slack DMs and Google Gemini Meet notes.
+  Read-only. Writes sanitized markdown to knowledge/slack/dms/ and knowledge/calls/.
+owner: "Pedro"
+status: "active"
+storage:
+  type: "local_mirror"
+  git_tracking: true
+  local_only: true
+permitted_integrations:
+  - slack_dms
+  - google_drive_gemini
+security_boundary:
+  credentials: environment_only
+  slack_scope: dm_and_group_dm_only
+  google_scope: drive_readonly_documents_readonly
+  write_back: never
+  public_channels: forbidden
+exports:
+  - sanitized_dm_history
+  - gemini_meet_notes
+does_not_export:
+  - slack_public_channels
+  - raw_credentials
+  - google_drive_files_other_than_gemini_notes
+interfaces:
+  cli: true
+  mcp: false
+  webhook: false

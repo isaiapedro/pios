@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1080">
+  <title>Review Card — Equal Rights</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      width: 1080px;
+      height: 1350px;
+      overflow: hidden;
+      background: #0d0d0d;
+    }
+
+    .card {
+      width: 1080px;
+      height: 1350px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      background:
+        radial-gradient(
+          circle at bottom center,
+          #1a1a1a 0%,
+          #0d0d0d 25%,
+          #0d0d0d 100%
+        );
+      overflow: hidden;
+    }
+
+    /* ── Image area ───────────────────────────────────────── */
+    .image-wrap {
+      position: relative;
+      width: 1080px;
+      height: 570px;
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+
+    .image-wrap img,
+    .image-placeholder {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .image-placeholder {
+      /* Simulate an album cover feel: dark with a subtle grid */
+      background:
+        repeating-linear-gradient(0deg, transparent, transparent 59px, #1c1c1c 59px, #1c1c1c 60px),
+        repeating-linear-gradient(90deg, transparent, transparent 59px, #1c1c1c 59px, #1c1c1c 60px),
+        #141414;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #333;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 20px;
+      letter-spacing: 0.1em;
+    }
+
+    /* Fade into background */
+    .image-wrap::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 240px;
+      background: linear-gradient(to bottom, transparent 0%, #0d0d0d 100%);
+      pointer-events: none;
+    }
+
+    /* ── Content area ─────────────────────────────────────── */
+    .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 0 72px;
+      padding-top: 12px;
+    }
+
+    /* "Review:" label */
+    .review-label {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 26px;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      color: #d32531;
+      margin-bottom: 18px;
+      flex-shrink: 0;
+    }
+
+    .title {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 68px;
+      font-weight: 700;
+      line-height: 1.1;
+      color: #ffffff;
+      letter-spacing: -0.02em;
+      flex-shrink: 0;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* Thin red underline accent after title */
+    .title-accent {
+      width: 52px;
+      height: 3px;
+      background: #d32531;
+      margin-top: 32px;
+      flex-shrink: 0;
+    }
+
+    .divider {
+      flex: 1;
+    }
+
+    /* Artist name */
+    .artist {
+      font-family: 'Inter', sans-serif;
+      font-size: 30px;
+      font-weight: 500;
+      color: #888;
+      letter-spacing: 0.02em;
+      margin-bottom: 52px;
+      flex-shrink: 0;
+    }
+
+    /* ── Logo ─────────────────────────────────────────────── */
+    .logo-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 56px;
+      flex-shrink: 0;
+    }
+
+    .logo-wrap svg {
+      width: 310px;
+      height: auto;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+
+    <div class="image-wrap">
+      <!--
+        Replace with:
+        <img src="album-cover.jpg" alt="Album cover">
+      -->
+      <div class="image-placeholder">Album cover</div>
+    </div>
+
+    <div class="content">
+
+      <div class="review-label">Review:</div>
+
+      <div class="title">
+        Album Title Goes Here
+      </div>
+
+      <div class="title-accent"></div>
+
+      <div class="divider"></div>
+
+      <div class="artist">Artist Name</div>
+
+      <div class="logo-wrap">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 730 95">
+          <rect x="0"  y="15" width="101" height="24" fill="white"/>
+          <rect x="0"  y="56" width="101" height="24" fill="white"/>
+          <text
+            x="121" y="80"
+            font-family="'JetBrains Mono', 'Courier New', monospace"
+            font-weight="700"
+            font-size="82"
+            fill="white"
+          >Equal Rights</text>
+        </svg>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+</html>

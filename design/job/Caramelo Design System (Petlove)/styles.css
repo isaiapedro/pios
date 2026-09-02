@@ -1,0 +1,18 @@
+/* ============================================================
+   Caramelo Design System — global stylesheet entry point.
+   Consuming projects link THIS file. It is only @import lines.
+   ============================================================ */
+
+/* Webfonts (Inter, Gooper, Roboto Mono) */
+@import './tokens/fonts.css';
+
+/* Full Figma variable export (all primitives + semantic aliases, all modes) */
+@import './tokens/fig-tokens.css';
+
+/* Curated, human-readable token layer (use these in components) */
+@import './tokens/colors.css';
+@import './tokens/typography.css';
+@import './tokens/spacing.css';
+
+/* Base element defaults */
+@import './tokens/base.css';

@@ -1,0 +1,28 @@
+/* ============================================================
+   Caramelo — Base element defaults
+   Applied to consuming surfaces. Sets the warm neutral page and
+   Inter body type. Keep light — components own their own styling.
+   ============================================================ */
+body {
+  font-family: var(--font-plain);
+  color: var(--c-text);
+  background: var(--c-bg);
+  font-size: var(--fs-body);
+  line-height: var(--lh-normal);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+h1, h2, h3, h4 {
+  font-family: var(--font-brand);
+  color: var(--c-text);
+  margin: 0;
+  line-height: var(--lh-tight);
+  font-weight: var(--fw-bold);
+}
+
+a { color: var(--c-brand); text-decoration: none; }

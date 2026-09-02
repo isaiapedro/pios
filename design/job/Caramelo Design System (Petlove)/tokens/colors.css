@@ -1,0 +1,99 @@
+/* ============================================================
+   Caramelo — Color tokens
+   Petlove&Co design system. Brand = purple, accent mark = heart red,
+   neutrals = warm "caramelo" cream/sand scale, warm-brown shadows.
+   Values extracted from the Figma variable collections.
+   ============================================================ */
+:root {
+  /* ---- Primitive: Purple (brand) ---- */
+  --purple-100: rgb(245,241,253);
+  --purple-200: rgb(228,219,243);
+  --purple-300: rgb(199,181,230);
+  --purple-600: rgb(78,32,150);
+  --purple-700: rgb(58,21,116);
+  --purple-800: rgb(47,19,90);
+
+  /* ---- Primitive: Grey (warm caramelo neutrals) ---- */
+  --grey-0:    rgb(255,255,255);
+  --grey-50:   rgb(252,250,248);
+  --grey-100:  rgb(249,244,236);
+  --grey-200:  rgb(235,226,211);
+  --grey-300:  rgb(211,200,182);
+  --grey-500:  rgb(147,132,108);
+  --grey-700:  rgb(103,93,76);
+  --grey-800:  rgb(79,71,59);
+  --grey-900:  rgb(50,45,37);
+  --grey-1100: rgb(0,0,0);
+
+  /* ---- Primitive: Green (success) ---- */
+  --green-200: rgb(220,238,225);
+  --green-300: rgb(185,221,196);
+  --green-400: rgb(150,204,168);
+  --green-600: rgb(73,169,113);
+  --green-700: rgb(55,127,85);
+  --green-800: rgb(44,101,68);
+  --green-900: rgb(33,76,51);
+
+  /* ---- Primitive: Red (danger / heart) ---- */
+  --red-200: rgb(252,229,228);
+  --red-300: rgb(248,203,200);
+  --red-400: rgb(244,169,164);
+  --red-600: rgb(234,83,74);
+  --red-700: rgb(175,62,56);
+  --red-800: rgb(140,50,44);
+  --red-900: rgb(105,37,33);
+
+  /* ---- Primitive: Yellow (warning) ---- */
+  --yellow-200: rgb(255,242,227);
+  --yellow-300: rgb(255,228,197);
+  --yellow-600: rgb(255,168,64);
+  --yellow-800: rgb(153,101,38);
+
+  /* ---- Primitive: Blue (info) ---- */
+  --blue-100: rgb(243,247,253);
+  --blue-200: rgb(219,231,249);
+  --blue-300: rgb(181,207,243);
+  --blue-600: rgb(10,96,216);
+  --blue-800: rgb(6,58,130);
+
+  /* ---- Semantic: Brand ---- */
+  --c-brand:        var(--purple-600);
+  --c-brand-strong: var(--purple-700);
+  --c-brand-darkest:var(--purple-800);
+  --c-brand-soft:   var(--purple-200);
+  --c-brand-faint:  var(--purple-100);
+  --c-on-brand:     var(--grey-0);
+
+  /* ---- Signature accent: the Caramelo heart ---- */
+  --c-heart: rgb(234,83,74);
+
+  /* ---- Semantic: Surfaces & text (warm neutrals) ---- */
+  --c-bg:            var(--grey-0);
+  --c-surface:       var(--grey-50);
+  --c-surface-cream: var(--grey-100);
+  --c-surface-sand:  var(--grey-200);
+  --c-border:        var(--grey-200);
+  --c-border-strong: var(--grey-300);
+  --c-text:          var(--grey-900);
+  --c-text-secondary:var(--grey-700);
+  --c-text-muted:    var(--grey-500);
+  --c-text-disabled: var(--grey-300);
+
+  /* ---- Semantic: Feedback ---- */
+  --c-success:        var(--green-600);
+  --c-success-strong: var(--green-700);
+  --c-success-soft:   var(--green-200);
+  --c-danger:         var(--red-600);
+  --c-danger-strong:  var(--red-700);
+  --c-danger-soft:    var(--red-200);
+  --c-warning:        var(--yellow-600);
+  --c-warning-strong: var(--yellow-800);
+  --c-warning-soft:   var(--yellow-200);
+  --c-info:           var(--blue-600);
+  --c-info-strong:    var(--blue-800);
+  --c-info-soft:      var(--blue-200);
+
+  /* ---- Overlays ---- */
+  --c-overlay-black: rgba(24,21,17,0.48);
+  --c-overlay-scrim: rgba(60,35,18,0.32);
+}
