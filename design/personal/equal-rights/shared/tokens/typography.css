@@ -1,9 +1,0 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
-
-:root {
-  --er-font-ui: Inter, Helvetica, Arial, sans-serif;
-  --er-font-display: 'Playfair Display', Georgia, serif;
-  --er-font-mono: 'IBM Plex Mono', ui-monospace, monospace;
-  --er-reading-size: 1.25rem;
-  --er-reading-leading: 1.8;
-}

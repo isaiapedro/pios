@@ -1,22 +1,26 @@
-# 1. Ignore everything by default
+# PIOS repository policy: track only system contracts and configuration.
+# All operational content, source code, assets, records, and generated output stay local.
 *
 
-# 2. Allow Git to traverse into directories to look for configs
+# Let Git traverse directories to evaluate the exact-file allowlist below.
 !*/
 
-# 3. CRITICAL: Absolutely block external, dependency, and cache folders
-# Git will completely skip scanning anything inside these folders
+# Externally sourced, vendor, and nested-repository trees never form part of
+# the system-contract repository, even when they contain allowlisted names.
+**/raw/
 **/node_modules/
-**/raw/docs/
-**/.ci/
-**/.circleci/
-**/.github/
-**/.vscode/
-**/.devcontainer/
-**/android/
-**/ios/
+**/.git/
+services/personal-blog/
+workspace/academic/
+workspace/experiments/chess-coach/
+workspace/side_projects/chess/
+workspace/social_media/projects/worldcup-shorts/
 
-# 4. Whitelist only your specific PIOS workspace files by exact name
+# Repository metadata
+!.gitignore
+!.gitmodules
+
+# PIOS system contracts and configuration
 !**/manifest.yaml
 !**/AGENTS.md
 !**/SYSTEM.md
@@ -42,69 +46,3 @@
 !**/.env.example
 !**/.gitkeep
 !**/pyproject.toml
-
-# 5. Chess coach experiment source (keep books/chroma local-only)
-!workspace/experiments/chess-coach/
-!workspace/experiments/chess-coach/**
-workspace/experiments/chess-coach/.venv/
-workspace/experiments/chess-coach/.tools/
-workspace/experiments/chess-coach/preflight.md
-workspace/experiments/chess-coach/report.md
-workspace/experiments/chess-coach/report.json
-workspace/experiments/chess-coach/data/books/**
-!workspace/experiments/chess-coach/data/books/.gitkeep
-!workspace/experiments/chess-coach/data/books/README.md
-!workspace/experiments/chess-coach/data/books/sample_primer.txt
-!workspace/experiments/chess-coach/data/books/sample_primer.themes.yaml
-!workspace/experiments/chess-coach/data/books/*.sections.yaml
-workspace/experiments/chess-coach/data/chroma/
-workspace/experiments/chess-coach/data/pgn_archive/**
-!workspace/experiments/chess-coach/data/pgn_archive/.gitkeep
-!workspace/experiments/chess-coach/data/pgn_archive/SCID_IMPORT.md
-workspace/experiments/chess-coach/data/masters/**
-!workspace/experiments/chess-coach/data/masters/README.md
-!workspace/experiments/chess-coach/data/masters/.gitkeep
-!workspace/experiments/chess-coach/data/masters/pgn/.gitkeep
-workspace/experiments/chess-coach/data/annotated/**
-!workspace/experiments/chess-coach/data/annotated/.gitkeep
-workspace/experiments/chess-coach/data/viewer_out/**
-!workspace/experiments/chess-coach/data/viewer_out/.gitkeep
-
-workspace/experiments/chess-coach/**/__pycache__/
-workspace/experiments/chess-coach/**/*.pyc
-workspace/experiments/chess-coach/**/.pytest_cache/
-
-# 6. Design system dossiers + assets (exclude prototype deps/caches)
-!design/
-!design/**
-design/**/node_modules/
-design/**/.vite/
-design/**/.figma/
-design/**/pnpm-lock.yaml
-design/**/package-lock.json
-design/mobile/chess app/Enhance App Visuals.zip
-
-# Block frontend source code and configs inside design prototypes
-design/**/src/
-design/**/*.tsx
-design/**/*.ts
-design/**/vite.config.ts
-design/**/tsconfig*.json
-
-# 7. Ensure this .gitignore itself is tracked
-!.gitignore
-
-# 8. Job Archive & Jira Integration
-!workspace/professional/job_archive/
-!workspace/professional/job_archive/**
-workspace/professional/job_archive/.env
-workspace/professional/job_archive/tokens.json
-workspace/professional/job_archive/cache/
-workspace/professional/job_archive/**/*.log
-workspace/professional/job_archive/.venv/
-workspace/professional/job_archive/**/__pycache__/
-workspace/professional/job_archive/**/*.pyc
-workspace/professional/job_archive/**/.pytest_cache/
-workspace/professional/job_archive/**/*.egg-info/
-workspace/professional/job_archive/state/idempotency.json
-workspace/professional/job_archive/archive/executions/*.json
