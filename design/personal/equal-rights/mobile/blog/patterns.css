@@ -1,0 +1,12 @@
+@media (max-width: 768px) {
+  .er-container { width: min(100% - 2rem, 100%); padding-block: 5rem; }
+  .er-search__input { padding: .625rem 1rem .625rem 2.4rem; font-size: .95rem; }
+  .er-print-label { padding: .625rem 1rem; font-size: .85rem; }
+  .er-editorial-grid { grid-template-columns: 1fr; gap: .75rem; }
+  .er-editorial-grid__rail, .er-editorial-grid__list { padding: 0 0 1.25rem; border-inline: 0; border-bottom: 1px solid var(--er-border-strong); }
+  .er-reading { padding: 4.5rem 1rem 3rem; }
+  .er-reading__body { font-size: 1.05rem; }
+  .er-reading__body h2 { font-size: 1.4rem; }
+  .er-engagement { flex-wrap: wrap; gap: .75rem; }
+  .er-review-section { padding: var(--er-space-6); }
+}

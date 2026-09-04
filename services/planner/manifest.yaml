@@ -15,7 +15,7 @@ tags:
   - expo
 depends_on:
   - registry
-  - knowledge/planning_science
+  - knowledge/health/wiki
 consumes:
   - personal_context
   - scientific_wiki
@@ -31,8 +31,8 @@ interfaces:
 permissions:
   reads:
     - personal/*
-    - knowledge/planning_science/*
+    - knowledge/health/wiki/*
     - registry
   writes:
     - databases/pg_init.sql
-    - master_wiki/insights/*
+    - personal/insights/*

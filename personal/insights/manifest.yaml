@@ -1,8 +1,10 @@
 name: "insights"
 type: "intelligence_engine"
-version: "1.0.0"
-description: "Strategic vector store managing historical behavioral reviews, trend analytics, and model updates"
+version: "2.0.0"
+description: "Manual, auditable behavioral reviews with routine, goal, and future-plan inferences"
 owner: "user"
 status: "active"
 layers:
   - "Layer 5: Intelligence"
+depends_on:
+  - knowledge/health/wiki

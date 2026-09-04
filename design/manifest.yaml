@@ -1,7 +1,7 @@
 id: design
 type: core_domain
 name: PIOS Design System
-version: 1.1.0
+version: 2.0.0
 status: active
 owner: Pedro
 description: >
@@ -16,13 +16,24 @@ consumes:
   - registry
 products:
   - id: chess-wrapped
+    owner: personal
     paths:
-      assets: assets/chess-wrapped
-      identity: identity/chess-wrapped
-      references: references/chess-wrapped
-      ui: ui/chess-wrapped
-      mobile: mobile/chess-wrapped
+      shared: personal/chess-wrapped/shared
+      mobile: personal/chess-wrapped/mobile
     source: workspace/side_projects/chess/mobile
     prototypes:
-      - mobile/chess app/ui
-      - mobile/chess app/Enhance App Visuals (2)
+      - personal/chess-wrapped/mobile/prototypes/figma-make
+  - id: equal-rights
+    owner: personal
+    paths:
+      shared: personal/equal-rights/shared
+      desktop: personal/equal-rights/desktop
+      mobile: personal/equal-rights/mobile
+    source: services/personal-blog/src/app
+    scope: pattern_dossier_only
+  - id: caramelo-design-system
+    owner: professional/petlove
+    paths:
+      shared: professional/petlove/caramelo-design-system/shared
+      mobile: professional/petlove/caramelo-design-system/mobile
+    scope: isolated_professional_system
