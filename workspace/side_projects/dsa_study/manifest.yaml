@@ -1,0 +1,20 @@
+id: dsa_study
+type: side_project
+name: DSA Study
+version: 0.1.0
+status: active
+owner: Pedro
+description: >
+  Local, privacy-preserving LeetCode catalog and Python workspace for
+  data-structures, algorithms, and computer-science study.
+tags:
+  - dsa
+  - algorithms
+  - leetcode
+  - study
+depends_on: []
+exports: []
+consumes:
+  - registry
+stage: prototype
+priority: medium
